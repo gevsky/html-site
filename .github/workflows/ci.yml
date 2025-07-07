@@ -1,0 +1,22 @@
+name: Simple HTML CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Получить код из GitHub
+        uses: actions/checkout@v3
+
+      - name: Проверка на наличие файла index.html
+        run: |
+          if [ -f index.html ]; then
+            echo "Файл найден ✅"
+          else
+            echo "Файл не найден ❌"
+            exit 1
+          fi

@@ -15,7 +15,7 @@ jobs:
       
       - name: Проверка на наличие index.html
         run: |
-          if [ -f html-site/index.html ]; then
+     if [ -f index.html ]; then
             echo "✅ Файл найден"
           else
             echo "❌ Файл не найден"

@@ -12,11 +12,12 @@ jobs:
       - name: Получить код из GitHub
         uses: actions/checkout@v3
 
-      - name: Проверка на наличие файла index.html
+      
+      - name: Проверка на наличие index.html
         run: |
-          if [ -f index.html ]; then
-            echo "Файл найден ✅"
+          if [ -f html-site/index.html ]; then
+            echo "✅ Файл найден"
           else
-            echo "Файл не найден ❌"
+            echo "❌ Файл не найден"
             exit 1
           fi

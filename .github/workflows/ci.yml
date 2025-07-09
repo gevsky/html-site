@@ -20,3 +20,6 @@ jobs:
             echo "❌ Файл не найден"
             exit 1
           fi
+          
+          - name: Проверка HTML через HTMLHint
+        run: npx htmlhint

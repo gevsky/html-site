@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Установка зависимостей
-        run: npm ci
+        run: npm install
 
       - name: Проверка на наличие index.html
         run: |

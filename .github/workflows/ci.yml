@@ -27,7 +27,7 @@ jobs:
       - name: Проверка HTML через HTMLHint
         run: npx htmlhint
         
-       - name: Проверка HTMLHint
+      - name: Проверка HTMLHint
         run: |
           echo "📂 Показать файлы"
           ls -la
